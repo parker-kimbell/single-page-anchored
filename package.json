@@ -1,0 +1,19 @@
+{
+  "name": "stacy_kimbell_site",
+  "version": "0.0.1",
+  "description": "A site for the artist Stacy Kimbell",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parker-kimbell/single-page-anchored.git"
+  },
+  "author": "Parker Kimbell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parker-kimbell/single-page-anchored/issues"
+  },
+  "homepage": "https://github.com/parker-kimbell/single-page-anchored#readme"
+}

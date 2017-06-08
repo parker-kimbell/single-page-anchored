@@ -145,6 +145,24 @@
       <div id="main">
         <div class="content">
           <div id="portfolio">
+            <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="large-image.jpg" itemprop="contentUrl" data-size="600x400">
+                        <img src="small-image.jpg" itemprop="thumbnail" alt="Image description" />
+                    </a>
+                    <figcaption itemprop="caption description">Image caption</figcaption>
+                </figure>
+
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="large-image.jpg" itemprop="contentUrl" data-size="600x400">
+                        <img src="small-image.jpg" itemprop="thumbnail" alt="Image description" />
+                    </a>
+                    <figcaption itemprop="caption description">Image caption</figcaption>
+                </figure>
+
+
+            </div>
             <!-- Root element of PhotoSwipe. Must have class pswp. -->
             <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
@@ -275,18 +293,17 @@
           var route = window.location.pathname;
           var currentMenuRoute = document.getElementById(route);
           var pswpElement = document.querySelectorAll('.pswp')[0];
-
           // build items array
           var items = [
               {
-                  src: 'https://placekitten.com/600/400',
-                  w: 600,
-                  h: 400
+                  src: '/images/hat.png',
+                  w: 1280,
+                  h: 1546 
               },
               {
-                  src: 'https://placekitten.com/1200/900',
-                  w: 1200,
-                  h: 900
+                  src: '/images/catwoman.png',
+                  w: 1280,
+                  h: 1804
               }
           ];
 

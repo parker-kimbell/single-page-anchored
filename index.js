@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-app.use(express.static('app/libs'))
+app.use(express.static('app/assets'))
 
 app.get('/', function (req, res) {
   res.sendFile(__dirname + '/app/index.html');

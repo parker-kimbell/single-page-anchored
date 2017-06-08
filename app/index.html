@@ -10,10 +10,11 @@
         background-color: #ffd390;
         -webkit-font-smoothing: antialiased;
         overflow: hidden;
-        -webkit-transition: height 0.5s;
-        -moz-transition: height 0.5s;
-        -ms-transition: height 0.5s;
-        transition: height 0.5s;
+        width : 22%;
+        -webkit-transition: height 0.5s 0.5s, width 0.5s;
+        -moz-transition: height 0.5s 0.5s, width 0.5s;
+        -ms-transition: height 0.5s 0.5s, width 0.5s;
+        transition: height 0.5s 0.5s, width 0.5s;
     }
     /* Bring SASS in to share this menu height */
     .menu-height {
@@ -77,20 +78,35 @@
       flex-direction: row;
       height: 100%;
     }
-    @media (max-width: 51.999em) {
+    @media (max-width: 56.999em) {
 
-        .custom-toggle {
-            display: block;
-        }
+      .custom-wrapper {
+          margin-bottom: 1em;
+          background-color: #ffd390;
+          -webkit-font-smoothing: antialiased;
+          overflow: hidden;
+          width : 22%;
+          -webkit-transition: height 0.5s, width 0.5s 0.5s;
+          -moz-transition: height 0.5s, width 0.5s 0.5s;
+          -ms-transition: height 0.5s, width 0.5s 0.5s;
+          transition: height 0.5s, width 0.5s 0.5s;
+      }
 
-        #container {
-          display: flex;
-          flex-direction: column;
-        }
+      .custom-toggle {
+          display: block;
+      }
 
-        .menu-height {
-          height: 2.1em;
-        }
+      #container {
+        flex-direction: column;
+        display: flex;
+      }
+      #container.column {
+        flex-direction: column;
+      }
+      .menu-height {
+        height: 2.1em;
+        width : 100%;
+      }
 
     }
   </style>

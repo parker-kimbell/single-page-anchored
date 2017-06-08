@@ -11,10 +11,10 @@
         -webkit-font-smoothing: antialiased;
         overflow: hidden;
         width : 22%;
-        -webkit-transition: height 0.5s 0.5s, width 0.5s;
-        -moz-transition: height 0.5s 0.5s, width 0.5s;
-        -ms-transition: height 0.5s 0.5s, width 0.5s;
-        transition: height 0.5s 0.5s, width 0.5s;
+        -webkit-transition: height 0.3s 0.3s, width 0.3s;
+        -moz-transition: height 0.3s 0.3s, width 0.3s;
+        -ms-transition: height 0.3s 0.3s, width 0.3s;
+        transition: height 0.3s 0.3s, width 0.3s;
     }
     /* Bring SASS in to share this menu height */
     .menu-height {
@@ -86,10 +86,10 @@
           -webkit-font-smoothing: antialiased;
           overflow: hidden;
           width : 22%;
-          -webkit-transition: height 0.5s, width 0.5s 0.5s;
-          -moz-transition: height 0.5s, width 0.5s 0.5s;
-          -ms-transition: height 0.5s, width 0.5s 0.5s;
-          transition: height 0.5s, width 0.5s 0.5s;
+          -webkit-transition: height 0.3s, width 0.3s 0.3s;
+          -moz-transition: height 0.3s, width 0.3s 0.3s;
+          -ms-transition: height 0.3s, width 0.3s 0.3s;
+          transition: height 0.3s, width 0.3s 0.3s;
       }
 
       .custom-toggle {
@@ -110,6 +110,20 @@
 
     }
   </style>
+  <!-- Core CSS file -->
+  <link rel="stylesheet" href="/styles/photoswipe.css">
+
+  <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+       In the folder of skin CSS file there are also:
+       - .png and .svg icons sprite,
+       - preloader.gif (for browsers that do not support CSS animations) -->
+  <link rel="stylesheet" href="/styles/default-skin/default-skin.css">
+
+  <!-- Core JS file -->
+  <script src="/libs/photoswipe.min.js"></script>
+
+  <!-- UI JS file -->
+  <script src="/libs/photoswipe-ui-default.min.js"></script> 
   </head>
   <body>
     <div id="container">
@@ -191,5 +205,12 @@
        })(this, this.document);
 
      </script>
+     <script>
+        (function (window, document) {
+          var route = window.location.pathname;
+          var currentMenuRoute = document.getElementById(route);
+        })(this, this.document);
+
+      </script>
   </body>
 </html>

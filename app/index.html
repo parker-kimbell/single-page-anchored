@@ -17,102 +17,114 @@
     }
     /* Bring SASS in to share this menu height */
     .menu-height {
-      height: 14em;
+      height: 100%;
     }
 
     .custom-wrapper.open {
         height: 14em;
     }
 
-.custom-menu-3 {
-    text-align: right;
-}
-
-.custom-toggle {
-    width: 34px;
-    height: 34px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: none;
-}
-
-.custom-toggle .bar {
-    background-color: #777;
-    display: block;
-    width: 20px;
-    height: 2px;
-    border-radius: 100px;
-    position: absolute;
-    top: 18px;
-    right: 7px;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    transition: all 0.5s;
-}
-
-.custom-toggle .bar:first-child {
-    -webkit-transform: translateY(-6px);
-    -moz-transform: translateY(-6px);
-    -ms-transform: translateY(-6px);
-    transform: translateY(-6px);
-}
-
-.custom-toggle.x .bar {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.custom-toggle.x .bar:first-child {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
-@media (max-width: 47.999em) {
+    .custom-menu-3 {
+        text-align: right;
+    }
 
     .custom-toggle {
+        width: 34px;
+        height: 34px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+    }
+
+    .custom-toggle .bar {
+        background-color: #777;
         display: block;
+        width: 20px;
+        height: 2px;
+        border-radius: 100px;
+        position: absolute;
+        top: 18px;
+        right: 7px;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        transition: all 0.5s;
     }
 
-    .menu-height {
-      height: 2.1em;
+    .custom-toggle .bar:first-child {
+        -webkit-transform: translateY(-6px);
+        -moz-transform: translateY(-6px);
+        -ms-transform: translateY(-6px);
+        transform: translateY(-6px);
     }
 
-}
-</style>
+    .custom-toggle.x .bar {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .custom-toggle.x .bar:first-child {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    #container {
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+    }
+    @media (max-width: 51.999em) {
+
+        .custom-toggle {
+            display: block;
+        }
+
+        #container {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .menu-height {
+          height: 2.1em;
+        }
+
+    }
+  </style>
   </head>
   <body>
-    <div class="pure-menu custom-wrapper menu-height" id="menu">
-      <span class="pure-menu-heading custom-brand">Stacy Kimbell</span>
-      <a href="#" class="custom-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
-      <ul class="pure-menu-list visible menu custom-can-transform">
-          <li class="pure-menu-item">
-            <a class="pure-menu-link" href="/portfolio">Portfolio</a>
-          </li>
-          <li class="pure-menu-item">
-            <a class="pure-menu-link" href="/contact">Contact</a>
-          </li>
-          <li class="pure-menu-item">
-            <a class="pure-menu-link" href="/about">About</a>
-          </li>
-      </ul>
-    </div>
-    <div id="main">
-      <div class="content">
-        <div id="portfolio">
+    <div id="container">
+      <div class="pure-menu custom-wrapper menu-height" id="menu">
+        <span class="pure-menu-heading custom-brand">Stacy Kimbell</span>
+        <a href="#" class="custom-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
+        <ul class="pure-menu-list visible menu custom-can-transform">
+            <li class="pure-menu-item">
+              <a class="pure-menu-link" href="/portfolio">Portfolio</a>
+            </li>
+            <li class="pure-menu-item">
+              <a class="pure-menu-link" href="/contact">Contact</a>
+            </li>
+            <li class="pure-menu-item">
+              <a class="pure-menu-link" href="/about">About</a>
+            </li>
+        </ul>
+      </div>
+      <div id="main">
+        <div class="content">
+          <div id="portfolio">
 
-        </div>
-        <div id="about">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales accumsan blandit. Donec ut eleifend justo, ac pretium velit. Phasellus vel urna ex. Morbi sodales, sapien non varius rutrum, sapien urna accumsan turpis, in convallis tortor quam ut dui. Donec gravida quam eget convallis ultricies. Donec porttitor nibh ut quam rutrum, a ultrices orci ornare. Cras aliquam vulputate molestie. Aenean dignissim elit in nisl convallis porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus malesuada, risus in sollicitudin laoreet, felis turpis aliquam quam, eu vestibulum nisl urna semper ex. Nullam at venenatis purus. Curabitur mollis suscipit sem. Duis ut velit eget lacus tincidunt interdum sed id purus. Suspendisse porttitor sem in augue dictum pulvinar.
+          </div>
+          <div id="about">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales accumsan blandit. Donec ut eleifend justo, ac pretium velit. Phasellus vel urna ex. Morbi sodales, sapien non varius rutrum, sapien urna accumsan turpis, in convallis tortor quam ut dui. Donec gravida quam eget convallis ultricies. Donec porttitor nibh ut quam rutrum, a ultrices orci ornare. Cras aliquam vulputate molestie. Aenean dignissim elit in nisl convallis porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus malesuada, risus in sollicitudin laoreet, felis turpis aliquam quam, eu vestibulum nisl urna semper ex. Nullam at venenatis purus. Curabitur mollis suscipit sem. Duis ut velit eget lacus tincidunt interdum sed id purus. Suspendisse porttitor sem in augue dictum pulvinar.
 
-          Sed ornare quis felis quis ullamcorper. Quisque tellus risus, consectetur id neque in, dapibus accumsan augue. In sem dui, rutrum ac dolor et, malesuada pulvinar turpis. Donec massa leo, ultricies et nulla sed, rutrum eleifend lectus. Morbi hendrerit diam eu felis suscipit, at imperdiet dui congue. Integer aliquam, velit eget pulvinar maximus, quam dolor sagittis ante, quis semper lacus leo sed metus. Donec sem nunc, blandit id arcu eget, egestas malesuada eros. Aenean eleifend facilisis dignissim.
-        </div>
-        <div id="contact">
-          example@email.com
+            Sed ornare quis felis quis ullamcorper. Quisque tellus risus, consectetur id neque in, dapibus accumsan augue. In sem dui, rutrum ac dolor et, malesuada pulvinar turpis. Donec massa leo, ultricies et nulla sed, rutrum eleifend lectus. Morbi hendrerit diam eu felis suscipit, at imperdiet dui congue. Integer aliquam, velit eget pulvinar maximus, quam dolor sagittis ante, quis semper lacus leo sed metus. Donec sem nunc, blandit id arcu eget, egestas malesuada eros. Aenean eleifend facilisis dignissim.
+          </div>
+          <div id="contact">
+            example@email.com
+          </div>
         </div>
       </div>
     </div>
@@ -129,7 +141,7 @@
                document.getElementById('menu').querySelectorAll('.custom-can-transform'),
                function(el){
                  //debugger;
-                 //el.classList.toggle('visible');
+                 //el.classList.toggle('pure-menu-horizontal');
                }
            );
        };
@@ -138,8 +150,7 @@
            // set timeout so that the panel has a chance to roll up
            // before the menu switches states
            if (menu.classList.contains('open')) {
-               toggleHorizontal();
-               //setTimeout(toggleHorizontal, 500);
+               setTimeout(toggleHorizontal, 500);
            }
            else {
                toggleHorizontal();

@@ -6,7 +6,7 @@
   margin-right: auto;
   padding-left: 1em;
   padding-right: 1em;
-  max-width: 768px;
+  max-width: 1000px;
 }
 body {
   position: absolute;
@@ -16,4 +16,14 @@ body {
   right : 0;
 }
 .my-gallery {
+  text-align: center;
+}
+#main {
+  display: flex;
+  flex: 1;
+}
+figure {
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
 }

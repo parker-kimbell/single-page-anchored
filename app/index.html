@@ -18,7 +18,7 @@
     }
     /* Bring SASS in to share this menu height */
     .menu-height {
-      position : absolute;
+      position : fixed;
       height: 100%;
     }
 
@@ -180,16 +180,22 @@
                         <img src="/images/hamster-heart-small.jpeg" itemprop="thumbnail" alt="Image description" />
                     </a>
                 </figure>
-                <figure class="block" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                     <a href="/images/craycoon.png" itemprop="contentUrl" data-size="1280x1152">
                         <img src="/images/craycoon-small.jpeg" itemprop="thumbnail" alt="Image description" />
                     </a>
                 </figure>
-                <figure class="block" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                     <a href="/images/deer-glasses.jpeg" itemprop="contentUrl" data-size="1280x1280">
                         <img src="/images/deer-glasses-small.jpeg" itemprop="thumbnail" alt="Image description" />
                     </a>
                 </figure>
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="/images/digi.png" itemprop="contentUrl" data-size="1280x1838">
+                        <img src="/images/digi-small.jpeg" itemprop="thumbnail" alt="Image description" />
+                    </a>
+                </figure>
+
             </div>
             <!-- Root element of PhotoSwipe. Must have class pswp. -->
             <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
@@ -358,9 +364,13 @@
                   src: '/images/deer-glasses.jpeg',
                   w: 1280,
                   h: 1280
+              },
+              {
+                  src: '/images/digi.png',
+                  w: 1280,
+                  h: 1838
               }
           ];
-
           // define options (if needed)
           var options = {
               // optionName: 'option value'

@@ -98,6 +98,7 @@
 
       .content {
         margin-left : 2em;
+        margin-top: 3.0em;
       }
 
       #container {
@@ -179,12 +180,18 @@
                         <img src="/images/hamster-heart-small.jpeg" itemprop="thumbnail" alt="Image description" />
                     </a>
                 </figure>
+              <div class="gallery-block">
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                     <a href="/images/craycoon.png" itemprop="contentUrl" data-size="1280x1152">
                         <img src="/images/craycoon-small.jpeg" itemprop="thumbnail" alt="Image description" />
                     </a>
                 </figure>
-
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="/images/deer-glasses.jpeg" itemprop="contentUrl" data-size="1280x1280">
+                        <img src="/images/deer-glasses-small.jpeg" itemprop="thumbnail" alt="Image description" />
+                    </a>
+                </figure>
+              </div>
             </div>
             <!-- Root element of PhotoSwipe. Must have class pswp. -->
             <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
@@ -348,6 +355,11 @@
                   src: '/images/craycoon.png',
                   w: 1280,
                   h: 1152
+              },
+              {
+                  src: '/images/deer-glasses.jpeg',
+                  w: 1280,
+                  h: 1280
               }
           ];
 

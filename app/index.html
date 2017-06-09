@@ -18,7 +18,8 @@
     }
     /* Bring SASS in to share this menu height */
     .menu-height {
-      height: auto;
+      position : absolute;
+      height: 100%;
     }
 
     .custom-wrapper.open {
@@ -95,6 +96,10 @@
           display: block;
       }
 
+      .content {
+        margin-left : 2em;
+      }
+
       #container {
         flex-direction: column;
         display: flex;
@@ -142,7 +147,7 @@
         </ul>
       </div>
       <div id="main">
-        <div class="content">
+        <div id="content" class="content">
           <div id="portfolio">
             <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
@@ -265,7 +270,7 @@
        (function (window, document) {
        var menu = document.getElementById('menu'),
            WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
-
+       var content = document.getElementById('content');
        function toggleHorizontal() {
          /* Get all transformable elements in our menu */
            [].forEach.call(
@@ -287,6 +292,7 @@
                toggleHorizontal();
            }
            menu.classList.toggle('open');
+           content.classList.toggle('open');
            document.getElementById('toggle').classList.toggle('x');
        };
 

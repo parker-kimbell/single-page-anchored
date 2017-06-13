@@ -145,7 +145,7 @@
           <img class="logo" src="/images/boss-betch.png" />
           <div class="title">Kimbell</div>
         </span>
-        <a href="#" class="custom-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
+        <a href="/" class="custom-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
         <ul class="pure-menu-list visible menu custom-can-transform">
             <li class="pure-menu-item">
               <a class="pure-menu-link" id="portfolio_link" href="#portfolio">Portfolio</a>
@@ -347,9 +347,14 @@
            toggleMenu();
            e.preventDefault();
        });
-       $('#about_link, #contact_link, #portfolio_link').on('click tap', function() {
+       $('#about_link, #contact_link, #portfolio_link').on('click tap', function(event) {
          if (menu.classList.contains('open')) {
              toggleMenu();
+             setTimeout(function() {
+               debugger;
+               $(event.target).trigger('click');
+             }, 400);
+              return false;
          }
        });
        window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);

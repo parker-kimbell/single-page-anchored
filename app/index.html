@@ -10,7 +10,7 @@
         background-color: #ffd390;
         -webkit-font-smoothing: antialiased;
         overflow: hidden;
-        width : 10em;
+        width : 12em;
         -webkit-transition: height 0.3s 0.3s, width 0.3s;
         -moz-transition: height 0.3s 0.3s, width 0.3s;
         -ms-transition: height 0.3s 0.3s, width 0.3s;
@@ -109,7 +109,7 @@
         flex-direction: column;
       }
       .menu-height {
-        height: 2.1em;
+        height: 3.6em;
         width : 100%;
       }
 
@@ -133,7 +133,9 @@
   <body>
     <div id="container">
       <div class="pure-menu custom-wrapper menu-height" id="menu">
-        <span class="pure-menu-heading custom-brand">Stacy Kimbell</span>
+        <span class="pure-menu-heading custom-brand">
+          Stacy <img class="logo" src="/images/boss-betch.png" /> Kimbell
+        </span>
         <a href="#" class="custom-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
         <ul class="pure-menu-list visible menu custom-can-transform">
             <li class="pure-menu-item">
@@ -179,21 +181,6 @@
                     </a>
                 </figure>
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="/images/hamster-heart.png" itemprop="contentUrl" data-size="888x900">
-                        <img src="/images/hamster-heart-small.jpeg" itemprop="thumbnail" alt="Image description" />
-                    </a>
-                </figure>
-                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="/images/craycoon.png" itemprop="contentUrl" data-size="1280x1152">
-                        <img src="/images/craycoon-small.jpeg" itemprop="thumbnail" alt="Image description" />
-                    </a>
-                </figure>
-                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="/images/deer-glasses.jpeg" itemprop="contentUrl" data-size="1280x1280">
-                        <img src="/images/deer-glasses-small.jpeg" itemprop="thumbnail" alt="Image description" />
-                    </a>
-                </figure>
-                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                     <a href="/images/old-greg-leer.jpg" itemprop="contentUrl" data-size="1280x1695">
                         <img src="/images/old-greg-leer-small.jpg" itemprop="thumbnail" alt="Image description" />
                     </a>
@@ -206,6 +193,21 @@
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                     <a href="/images/old-greg-menace.jpg" itemprop="contentUrl" data-size="1280x1667">
                         <img src="/images/old-greg-menace-small.jpg" itemprop="thumbnail" alt="Image description" />
+                    </a>
+                </figure>
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="/images/hamster-heart.png" itemprop="contentUrl" data-size="888x900">
+                        <img src="/images/hamster-heart-small.jpeg" itemprop="thumbnail" alt="Image description" />
+                    </a>
+                </figure>
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="/images/craycoon.png" itemprop="contentUrl" data-size="1280x1152">
+                        <img src="/images/craycoon-small.jpeg" itemprop="thumbnail" alt="Image description" />
+                    </a>
+                </figure>
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="/images/deer-glasses.jpeg" itemprop="contentUrl" data-size="1280x1280">
+                        <img src="/images/deer-glasses-small.jpeg" itemprop="thumbnail" alt="Image description" />
                     </a>
                 </figure>
             </div>
@@ -277,12 +279,17 @@
             </div>
           </div>
           <div id="about">
+            <span class="section-heading pure-menu-heading"> About </span>
+            <img src="/images/stacy-kimbell.jpg" class="artist-pic" alt="Image description" />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales accumsan blandit. Donec ut eleifend justo, ac pretium velit. Phasellus vel urna ex. Morbi sodales, sapien non varius rutrum, sapien urna accumsan turpis, in convallis tortor quam ut dui. Donec gravida quam eget convallis ultricies. Donec porttitor nibh ut quam rutrum, a ultrices orci ornare. Cras aliquam vulputate molestie. Aenean dignissim elit in nisl convallis porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus malesuada, risus in sollicitudin laoreet, felis turpis aliquam quam, eu vestibulum nisl urna semper ex. Nullam at venenatis purus. Curabitur mollis suscipit sem. Duis ut velit eget lacus tincidunt interdum sed id purus. Suspendisse porttitor sem in augue dictum pulvinar.
-
             Sed ornare quis felis quis ullamcorper. Quisque tellus risus, consectetur id neque in, dapibus accumsan augue. In sem dui, rutrum ac dolor et, malesuada pulvinar turpis. Donec massa leo, ultricies et nulla sed, rutrum eleifend lectus. Morbi hendrerit diam eu felis suscipit, at imperdiet dui congue. Integer aliquam, velit eget pulvinar maximus, quam dolor sagittis ante, quis semper lacus leo sed metus. Donec sem nunc, blandit id arcu eget, egestas malesuada eros. Aenean eleifend facilisis dignissim.
           </div>
           <div id="contact">
+            <img src="/images/hamster-heart-small.jpeg" class="background-image" itemprop="thumbnail" alt="Image description" />
+            <span class="section-heading pure-menu-heading"> Contact </span>
             example@email.com
+
+            <button onclick="mailto:stacymayjane@gmail.com">Send an email</button>
           </div>
         </div>
       </div>

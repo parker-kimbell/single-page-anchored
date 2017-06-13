@@ -1,6 +1,10 @@
 .menu {
   position : relative;
 }
+.custom-brand {
+  vertical-align: middle;
+  color : black;
+}
 .content {
   margin-top: 0.5em;
   margin-left : 12em;
@@ -16,6 +20,9 @@
 .content.open {
   margin-top: 10em;
 }
+.logo {
+  height : 3em;
+}
 body {
   position: absolute;
   top: 0;
@@ -30,11 +37,27 @@ body {
   display: flex;
   flex: 1;
 }
+#about {
+  margin-bottom: 25em;
+}
+#contact {
+  margin-bottom: 40em;
+}
 figure {
   margin: 0;
   display: inline-block;
   vertical-align: top;
 }
-.block {
-  /*display : block;*/
+.section-heading {
+  font-size : 3em;
+}
+.background-image {
+  position: absolute;
+  left: 40%;
+  z-index: -2;
+}
+.artist-pic {
+  float: right;
+  margin: 50px;
+  border-radius: 4px;
 }

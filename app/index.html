@@ -148,13 +148,13 @@
         <a href="#" class="custom-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
         <ul class="pure-menu-list visible menu custom-can-transform">
             <li class="pure-menu-item">
-              <a class="pure-menu-link" href="#portfolio">Portfolio</a>
+              <a class="pure-menu-link" id="portfolio_link" href="#portfolio">Portfolio</a>
             </li>
             <li class="pure-menu-item">
-              <a class="pure-menu-link" href="#about">About</a>
+              <a class="pure-menu-link" id="about_link" href="#about">About</a>
             </li>
             <li class="pure-menu-item">
-              <a class="pure-menu-link" href="#contact">Contact</a>
+              <a class="pure-menu-link" id="contact_link" href="#contact">Contact</a>
             </li>
         </ul>
       </div>
@@ -318,8 +318,6 @@
            [].forEach.call(
                document.getElementById('menu').querySelectorAll('.custom-can-transform'),
                function(el){
-                 //debugger;
-                 //el.classList.toggle('pure-menu-horizontal');
                }
            );
        };
@@ -349,8 +347,17 @@
            toggleMenu();
            e.preventDefault();
        });
-
        window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
+       setInterval(function() {
+         if (window.location.hash) {
+           history.pushState("", document.title, window.location.hash.replace('#', ''));
+         }
+       }, 5);
+       if (window.location.pathname) {
+         setTimeout(function() {
+           $('#' + window.location.pathname.replace('/', '') + "_link").trigger('click')
+         }, 100);
+       }
        })(this, this.document);
 
      </script>

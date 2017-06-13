@@ -38,6 +38,7 @@ body {
   flex: 1;
 }
 #about {
+  margin-top : 3em;
   margin-bottom: 25em;
 }
 #contact {

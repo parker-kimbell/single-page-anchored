@@ -347,9 +347,14 @@
            toggleMenu();
            e.preventDefault();
        });
+       $('#about_link, #contact_link, #portfolio_link').on('click tap', function() {
+         if (menu.classList.contains('open')) {
+             toggleMenu();
+         }
+       });
        window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
        setInterval(function() {
-         if (window.location.hash) {
+         if (window.location.hash && !window.location.hash.indexOf('&') > -1) {
            history.pushState("", document.title, window.location.hash.replace('#', ''));
          }
        }, 5);

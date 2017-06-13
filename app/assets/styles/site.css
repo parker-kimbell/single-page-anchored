@@ -72,3 +72,6 @@ figure {
   margin-top: 0;
   border-radius: 4px;
 }
+body {
+  scroll-behavior : smooth;
+}

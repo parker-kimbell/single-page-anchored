@@ -354,11 +354,11 @@
        });
        window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
        setInterval(function() {
-         if (window.location.hash && !window.location.hash.indexOf('&') > -1) {
+         if (window.location.hash && window.location.hash.indexOf('&') === -1) {
            history.pushState("", document.title, window.location.hash.replace('#', ''));
          }
        }, 5);
-       if (window.location.pathname) {
+       if (window.location.pathname && window.location.hash.indexOf('&') === -1) {
          setTimeout(function() {
            $('#' + window.location.pathname.replace('/', '') + "_link").trigger('click')
          }, 100);

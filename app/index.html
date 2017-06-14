@@ -104,12 +104,15 @@
       }
 
       .content {
-        margin-left : 2em;
+        margin-left : 0em;
         margin-top: 3.0em;
       }
 
       #about {
         padding-top : 3.0em;
+      }
+      #about > span {
+        text-align: center;
       }
       #contact {
         padding-top : 3.0em;
@@ -309,9 +312,12 @@
           <div id="contact">
             <img src="/images/deer-glasses-small-transp.png" class="background-image left" itemprop="thumbnail" alt="Image description" />
             <span class="section-heading pure-menu-heading"> Contact </span>
-            example@email.com
-
-            <button onclick="mailto:stacymayjane@gmail.com">Send an email</button>
+            <div>
+              stacymayjane@gmail.com
+              <br />
+              <br />
+              <a href="mail:stacymayjane@gmail.com" class="pure-button pure-button-primary">Send an email</a>
+            </div>
           </div>
         </div>
       </div>

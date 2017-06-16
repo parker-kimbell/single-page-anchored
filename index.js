@@ -18,6 +18,10 @@ app.get('/contact', function (req, res) {
   res.sendFile(__dirname + '/app/index.html');
 });
 
+app.get('/*', function(req, res){
+  res.redirect('/');
+});
+
 app.listen(3000, function () {
   console.log('Site listening on port 3000!')
 });

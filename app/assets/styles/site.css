@@ -51,6 +51,16 @@ figure {
   margin: 0;
   display: inline-block;
   vertical-align: top;
+  width: 40%;
+  height: auto;
+}
+figure > a {
+  width: 100%;
+  height: auto;
+}
+figure > a > img {
+  width: 100%;
+  height: auto;
 }
 .section-heading {
   font-size : 3em;
@@ -73,7 +83,7 @@ figure {
 }
 .artist-pic {
   float: right;
-  margin: 30px;
+  margin: 10px;
   margin-top: 0;
   border-radius: 4px;
 }

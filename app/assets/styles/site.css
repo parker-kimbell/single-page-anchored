@@ -11,7 +11,6 @@
   margin-right : 2em;
   padding-left: 1em;
   padding-right: 1em;
-  z-index: -1;
   -webkit-transition: margin-top 0.3s;
   -moz-transition: margin-top 0.3s;
   -ms-transition: margin-top 0.3s;
@@ -22,6 +21,9 @@
 }
 .logo {
   height : 3em;
+}
+.pure-menu-link:focus, .pure-menu-link:hover {
+  background-color: #FBFBFB;
 }
 body {
   position: absolute;

@@ -67,8 +67,9 @@ figure {
 }
 .title {
   display: inline-block;
-  padding-bottom: 30px;
+  padding-bottom: 18px;
   vertical-align: middle;
+  padding-top: 18px;
 }
 .artist-pic {
   float: right;

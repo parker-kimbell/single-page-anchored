@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>Stacy Kimbell</title>
+    <link rel="icon"
+      type="image/png"
+      href="favicon.png" />
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
     <link rel="stylesheet" href="/styles/site.css">
@@ -25,7 +28,7 @@
     }
 
     .custom-wrapper.open {
-        height: 12em;
+        height: 10em;
     }
 
     .custom-menu-3 {
@@ -39,6 +42,10 @@
         top: 10px;
         right: 0;
         display: none;
+    }
+
+    #email-button-small {
+      display: none;
     }
 
     .custom-toggle .bar {
@@ -103,7 +110,18 @@
       }
 
       .custom-toggle {
-          display: block;
+        display: block;
+      }
+
+      #email-button-small {
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        right: 40px;
+      }
+
+      #email-button-large {
+        display: none;
       }
 
       .content {
@@ -165,12 +183,14 @@
     <div id="container">
       <div class="pure-menu custom-wrapper menu-height" id="menu">
         <span class="pure-menu-heading custom-brand">
-          <div class="title">Stacy</div>
-          <img class="logo" src="/images/boss-betch.png" />
-          <div class="title">Kimbell</div>
+          <div class="title">Stacy Kimbell</div>
         </span>
+        <a id="email-button-small" href="mailto:stacymayjane@gmail.com" class="pure-button pure-button-primary">Send an email</a>
+        <a href="mailto:stacymayjane@gmail.com" id="email-button-large" class="pure-button pure-button-primary">Send an email</a>
         <a href="/" class="custom-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
+
         <ul class="pure-menu-list visible menu custom-can-transform">
+
             <li class="pure-menu-item">
               <a class="pure-menu-link" id="portfolio_link" href="#portfolio">Portfolio</a>
             </li>

@@ -60,8 +60,7 @@ figure {
   z-index: -2;
 }
 .left {
-  left: -117px;
-  width: 100%;
+  left: 16px;
 }
 .middle {
   left : 6%;

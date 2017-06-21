@@ -411,9 +411,9 @@
        }, 5);
        /* On initial load, scroll*/
        if (window.location.pathname && window.location.hash.indexOf('&') === -1) {
-         $( document ).ready(function() {
+         setTimeout(function() {
            $('#' + window.location.pathname.replace('/', '') + "_link").trigger('click')
-         });
+         }, 700);
        }
        })(this, this.document);
 

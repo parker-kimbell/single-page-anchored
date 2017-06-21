@@ -403,15 +403,17 @@
          }
        });
        window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
+       /* Clear the anchor tag from our url every 5 seconds unless we're viewing a particular image*/
        setInterval(function() {
          if (window.location.hash && window.location.hash.indexOf('&') === -1) {
            history.pushState("", document.title, window.location.hash.replace('#', ''));
          }
        }, 5);
+       /* On initial load, scroll*/
        if (window.location.pathname && window.location.hash.indexOf('&') === -1) {
-         setTimeout(function() {
+         $( document ).ready(function() {
            $('#' + window.location.pathname.replace('/', '') + "_link").trigger('click')
-         }, 100);
+         });
        }
        })(this, this.document);
 

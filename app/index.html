@@ -413,13 +413,23 @@
        /* On initial load, scroll*/
        if (window.location.pathname && window.location.hash.indexOf('&') === -1) {
          var menuLinkId = '#' + window.location.pathname.replace('/', '') + "_link";
-         $(menuLinkId).focus()
+         if ($('.left').css('left') !== "-175px") $(menuLinkId).focus();
          setTimeout(function() {
            $(menuLinkId).trigger('click');
          }, 400);
        }
        })(this, this.document);
-
+       window.onpopstate = function(state) {
+         // Case: we are going back to one of our links
+         if (window.location.pathname !== "/") {
+           var menuLinkId = '#' + window.location.pathname.replace('/', '') + "_link";
+           $(menuLinkId).trigger('click');
+           // Case: we're not in mobile mode.
+           if ($('.left').css('left') !== "-175px") $(menuLinkId).focus();
+         } else {
+           $('a').blur();
+         }
+       }
      </script>
      <script>
         (function (window, document) {

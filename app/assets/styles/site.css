@@ -23,6 +23,7 @@
 }
 .pure-menu-link:focus, .pure-menu-link:hover {
   background-color: #FBFBFB;
+  outline: none;
 }
 body {
   position: absolute;

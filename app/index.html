@@ -405,15 +405,18 @@
        window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
        /* Clear the anchor tag from our url every 5 seconds unless we're viewing a particular image*/
        setInterval(function() {
+         // Case: Only remove the has if we're not linking to a gallery image
          if (window.location.hash && window.location.hash.indexOf('&') === -1) {
-           history.pushState("", document.title, window.location.hash.replace('#', ''));
+           history.replaceState("", document.title, window.location.hash.replace('#', ''));
          }
        }, 5);
        /* On initial load, scroll*/
        if (window.location.pathname && window.location.hash.indexOf('&') === -1) {
+         var menuLinkId = '#' + window.location.pathname.replace('/', '') + "_link";
+         $(menuLinkId).focus()
          setTimeout(function() {
-           $('#' + window.location.pathname.replace('/', '') + "_link").trigger('click')
-         }, 700);
+           $(menuLinkId).trigger('click');
+         }, 400);
        }
        })(this, this.document);
 
